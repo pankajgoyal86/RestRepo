@@ -29,7 +29,7 @@ import io.swagger.annotations.ApiResponses;
  *
  */
 @RestController
-public class MainController {
+public class BookingController {
 	
 	@Autowired
 	private BookingService bookingService;

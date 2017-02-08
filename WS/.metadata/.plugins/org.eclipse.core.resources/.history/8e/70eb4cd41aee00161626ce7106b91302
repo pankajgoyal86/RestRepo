@@ -57,7 +57,7 @@ public class BookingController {
 		
 		
 	}
-	@ApiOperation(value = "postBooking", nickname = "postBooking")
+	@ApiOperation(value = "postBookings", nickname = "postBookings")
 	@RequestMapping(value="/",method=RequestMethod.POST)
 	@ApiResponses(value = { 
             @ApiResponse(code = 200, message = "Success", response = Booking.class),

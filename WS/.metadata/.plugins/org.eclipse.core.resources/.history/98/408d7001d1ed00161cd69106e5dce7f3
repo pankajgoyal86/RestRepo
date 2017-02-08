@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package com.booking.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+
+/**
+ * @author pgoya6
+ *
+ */
+@RestController
+public class MainController {
+	
+	@ApiOperation(value = "getBookings", nickname = "getBookings")
+	@RequestMapping(method=RequestMethod.GET)
+	public String bookingOverview(){
+		return "bookingOverview";
+	}
+	
+	@ApiOperation(value = "getBookingsByID", nickname = "getBookingsByID")
+	@RequestMapping(value="/{id}",method=RequestMethod.GET)
+	@ApiImplicitParams({
+        @ApiImplicitParam(name = "id", value = "User's name", required = false, dataType = "string", paramType = "query", defaultValue="Niklas")
+      })
+	public String bookingOverviewById(){
+		return "bookinOverViewById";
+	}
+
+}

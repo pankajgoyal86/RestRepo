@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.booking.model;
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.booking.entity.Booking;
+
+/**
+ * @author pgoya6
+ *
+ */
+@Repository
+public interface BookingDAO extends JpaRepository<Booking, String> {
+	
+
+
+}

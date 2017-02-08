@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-02-07T10:38:00Z</updated>
+  <updated>2017-02-08T01:39:00Z</updated>
+  <entry>
+    <title>Spring Tips: Distributed Tracing with Zipkin</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/02/08/spring-tips-distributed-tracing-with-zipkin" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2017-01-26:2810</id>
+    <updated>2017-02-08T01:39:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this tip, we&amp;rsquo;ll quickly look at how to integrate distributed tracing with Spring Cloud Sleuth and the OpenZipkin project.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CFLZJSwbYI0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - February 7th, 2017</title>
     <link rel="alternate" href="https://spring.io/blog/2017/02/07/this-week-in-spring-february-7th-2017" />
@@ -1169,18 +1182,5 @@ With Ingalls, we have extracted that support into a Spring Data module, so that 
 &lt;p&gt;Reactive Streams simplifies the development of asynchronous systems using non-blocking back pressure. The reactive framework enables the development of asynchronous microservices by providing a side-effect free functional API with minimal overhead that supports low latency, non-blocking end-to-end data flows.&lt;/p&gt;
 &lt;p&gt;After an introduction to Kafka and reactive streams, we will explore the development of a reactive streams interface for Kafka and the use of this interface for building robust applications using the microservices architecture.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-ioxYn9Vlao" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne Platform 2016 Replay:  Task Madness - Modern on demand processing</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/01/30/springone-platform-2016-replay-task-madness-modern-on-demand-processing" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2017-01-30:2819</id>
-    <updated>2017-01-30T12:34:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speakers: Michael Minella,Glenn Renfro&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/task-madness-modern-on-demand-processing"&gt;http://www.slideshare.net/SpringCentral/task-madness-modern-on-demand-processing&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The flexibility promised by cloud computing is something that hasn&amp;rsquo;t been fully available in many use cases yet. Most application models are still based on long running containers, robbing users of that very flexibility. Spring Cloud Task, a new project in the Spring portfolio provides both functional and non-functional capabilities for building short lived, cloud-native, microservices. This talk will introduce the project as well as look at example applications. Since we&amp;rsquo;re in Vegas, we&amp;rsquo;re going to put that on demand processing to good use by demonstrating how we used it to generate a March Madness NCAA Men&amp;rsquo;s Basketball Tournament bracket. We&amp;rsquo;ll review how it worked, why Spring Cloud Task was the best fit for this type of application, and how we did this past March!&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/golp4gH7MsI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.booking.services;
+
+import com.booking.entity.Booking;
+
+/**
+ * @author pgoya6
+ *
+ */
+public interface BookingService {
+	
+	public Booking getBooking();
+	public Booking postBooking();
+	
+
+}

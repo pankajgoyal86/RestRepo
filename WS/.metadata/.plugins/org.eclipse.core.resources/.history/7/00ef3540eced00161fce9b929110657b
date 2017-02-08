@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.booking.services;
+
+/**
+ * @author pgoya6
+ *
+ */
+public interface BookingService {
+	
+	public Booking getBooking();
+	public Booking postBooking();
+	}
+
+}

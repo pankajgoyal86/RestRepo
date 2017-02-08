@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.booking.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.booking.entity.Booking;
+import com.booking.model.BookingDAO;
+
+
+public class BookingServiceImpl implements BookingService {
+
+	@Autowired	
+	private BookingDAO bookingDAO;
+	@Override
+	public Booking getBooking() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Booking postBooking() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.booking.model;
+
+/**
+ * @author pgoya6
+ *
+ */
+public interface BookingDAO {
+
+}

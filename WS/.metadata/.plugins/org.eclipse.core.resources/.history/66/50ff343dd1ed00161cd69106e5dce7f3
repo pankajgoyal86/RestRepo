@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.booking.entity;
+
+/**
+ * @author pgoya6
+ *
+ */
+public class Booking {
+
+}

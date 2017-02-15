@@ -31,6 +31,7 @@ public class BookingAppApplication {
 	
 	private ApiInfo apiInfo(){
 		
-		return new ApiInfo("BookingApplication", "Booking Description", "1.0", "Terms of Service", "pgoyal5@sapient.com", "license of API", "License of Url");	
+		return new ApiInfo("BookingApplication", "Booking Description", "1.0", "Terms of Service", "pgoyal5@sapient.com", "license of API", "License of Url");
+		//return new ApiInfo(title, description, version, termsOfServiceUrl, contact, license, licenseUrl)
 	}
 }

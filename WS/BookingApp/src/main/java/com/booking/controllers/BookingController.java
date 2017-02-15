@@ -19,7 +19,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.booking.entity.Booking;
 import com.booking.services.BookingService;
 
-
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -28,6 +28,7 @@ import io.swagger.annotations.ApiResponses;
  * @author pgoya6
  *
  */
+@Api(basePath = "/bookings", value = "Bookings", description = "Operations with Bookings", produces = "application/json")
 @RestController
 public class BookingController {
 	
@@ -40,7 +41,7 @@ public class BookingController {
 		return "bookingOverview";
 	}*/
 	
-	@ApiOperation(value = "getBookings", nickname = "getBookings")
+	@ApiOperation(value = "getBookings", nickname = "getBookings", notes="Fetch list of Bookings")
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	@ApiResponses(value = { 
             @ApiResponse(code = 200, message = "Success", response = Booking.class),
@@ -57,7 +58,7 @@ public class BookingController {
 		
 		
 	}
-	@ApiOperation(value = "postBooking", nickname = "postBooking")
+	@ApiOperation(value = "postBooking", nickname = "postBooking" , notes= "create new booking")
 	@RequestMapping(value="/",method=RequestMethod.POST)
 	@ApiResponses(value = { 
             @ApiResponse(code = 200, message = "Success", response = Booking.class),
@@ -73,7 +74,7 @@ public class BookingController {
 			return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		HttpHeaders headers = new HttpHeaders();
-		headers.setLocation(uri.path("/bookings/{id}").buildAndExpand(newBooking.getId()).toUri());
+		headers.setLocation(uri.path("/bookings/{id}").buildAndExpand(newBooking.getBookingId()).toUri());
 		return new ResponseEntity<Booking>(newBooking,headers,HttpStatus.OK);
 		
 		
